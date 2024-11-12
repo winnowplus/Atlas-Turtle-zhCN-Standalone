@@ -29,11 +29,11 @@
 -- Now externally localized!
 
 local AL = AceLibrary("AceLocale-2.2"):new("Atlas");
-local BC = AceLibrary("Babble-Class-2.2-Atlas")
---local BZ = AceLibrary("Babble-Zone-2.2-Atlas")
---local BB = AceLibrary("Babble-Boss-2.2-Atlas")
-local BF = AceLibrary("Babble-Faction-2.2-Atlas")
-local BIS = AceLibrary("Babble-ItemSet-2.2-Atlas")
+local BC = AceLibrary("Babble-Class-2.2")
+--local BZ = AceLibrary("Babble-Zone-2.2")
+--local BB = AceLibrary("Babble-Boss-2.2")
+local BF = AceLibrary("Babble-Faction-2.2")
+local BIS = AceLibrary("Babble-ItemSet-2.2")
 
 local BLUE = "|cff6666ff";
 local GREY = "|cff999999";
@@ -139,7 +139,6 @@ AtlasMaps = {
 		{ GREY.."4) "..AL["High Priestess A'lathea"], NPC, 92108 };
 		{ GREY.."5) "..AL["Fenektis the Deceiver"], NPC, 92111 };
 		{ GREY.."6) "..AL["Master Raxxieth"], NPC, 92110 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	--HateforgeQuarry TurtleWOW
@@ -158,7 +157,6 @@ AtlasMaps = {
 		{ GREY.."3) "..AL["Corrosis"], NPC, 60829 };
 		{ GREY.."4) "..AL["Hatereaver Annihilator"], NPC, 60734 };
 		{ GREY.."5) "..AL["Hargesh Doomcaller"], NPC, 60737 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	--KarazhanCrypt TurtleWOW
@@ -179,9 +177,7 @@ AtlasMaps = {
 		{ GREY.."5) "..AL["Archlich Enkhraz"], NPC, 91916 };
 		{ GREY.."6) "..AL["Commander Andreon"], NPC, 91919 }; -- Commander Andreon not Commander Anderson. AtlasLoot name misstake
 		{ GREY.."7) "..AL["Alarus"], NPC, 91928 };
-		{ "" };
 		{ GREY..INDENT..AL["Half-Buried Treasure Chest"], OBJECT, 379545 };
-		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	--CavernsOfTimeBlackMorass TurtleWOW
 	CavernsOfTimeBlackMorass = {
@@ -195,14 +191,13 @@ AtlasMaps = {
 		{ BLUE.."A) "..AL["Entrance"] };
 		{ BLUE.."B) " };
 		{ GREY.."1) "..AL["Chronar"], NPC, 65113 };
-		{ GREY.."   "..AL["Harbinger Aph'ygth"].." (已移除)" , NPC, 65114 };
+		{ GREY.."removed) "..AL["Harbinger Aph'ygth"], NPC, 65114 };
 		{ GREY.."2) "..AL["Epidamu"], NPC, 61575 };
 		{ GREY.."3) "..AL["Drifting Avatar of Sand"], NPC, 61316 };
 		{ GREY.."4) "..AL["Time-Lord Epochronos"], NPC, 65116 };
 		{ GREY.."5) "..AL["Mossheart"], NPC, 65124 };
 		{ GREY.."7) "..AL["Rotmaw"], NPC, 65122 };
 		{ GREY.."6) "..AL["Antnormi"], NPC, 65125 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	--StormwindVault TurtleWOW
@@ -221,10 +216,8 @@ AtlasMaps = {
 		{ GREY.."3) "..AL["Black Bride"], NPC, 80850 };
 		{ GREY.."4) "..AL["Damian"], NPC, 80854 };
 		{ GREY.."5) "..AL["Volkan Cruelblade"], NPC, 80851 };
-		{ GREY.."6) "..AL["Arc'tiras"].." (无直接掉落)", NPC, 93107 };
+		{ GREY.."6) "..AL["Arc'tiras"], NPC, 93107 };
 		{ GREY.."7) "..AL["Vault Armory Equipment"], OBJECT, 2010867 };
-		{ "" };
-		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 		--GilneasCity TurtleWOW
 	GilneasCity = {
@@ -243,7 +236,6 @@ AtlasMaps = {
 		{ GREY.."6) "..AL["Horsemaster Levvin"], NPC, 61605 };
 		{ GREY.."7) "..AL["Harlow Family Chest"], OBJECT, 2020027 };
 		{ GREY.."8) "..AL["Genn Greymane"], NPC, 61418 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 		--LowerKara TurtleWOW
@@ -261,7 +253,6 @@ AtlasMaps = {
 		{ GREY.."4) "..AL["Clawlord Howlfang"], NPC, 61223 };
 		{ GREY.."5) "..AL["Lord Blackwald II"], NPC, 61222 };
 		{ GREY.."6) "..AL["Moroes"], NPC, 61226 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 		{ GREY..INDENT..AL["LKH Enchants"] };
 	};
@@ -278,7 +269,6 @@ AtlasMaps = {
 		{ GREY.."2) "..AL["Solnius the Awakener"], NPC, 60748 };
 		{ GREY.."3) "..AL["Solnius the Awakener (Page 2)"], NPC, 60748 };
 		{ GREY.."4) "..AL["Favor of Erennius (ES Hard Mode)"], OBJECT, 2020042 };
-		{ "" };
 		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	RazorfenKraul = {
@@ -383,11 +373,9 @@ AtlasMaps = {
 		{ GREY.."10) "..AL["Rotgrip"], NPC, 13596 };
 		{ GREY.."11) "..AL["Princess Theradras"], NPC, 12201 };
 		{ GREY.."12) "..AL["Elder Splitrock"].." ("..AL["Lunar Festival"]..")", NPC, 15556 };
-		{ "" };
-		{ GREY..INDENT..AL["Trash Mobs"] };
 	};
 	DireMaulEast = {
-		ZoneName = { AL["Dire Maul (East)"], 2557 };
+		ZoneName = { AL["Dire Maul"].." ("..AL["East"]..")", 2557 };
 		Acronym = "DME";
 		Location = { AL["Feralas"], 357 };
 		LevelRange = "55-58";
@@ -416,7 +404,7 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Set: "]..BIS["Ironweave Battlesuit"] };
 	};
 	DireMaulNorth = {
-		ZoneName = { AL["Dire Maul (North)"], 2557 };
+		ZoneName = { AL["Dire Maul"].." ("..AL["North"]..")", 2557 };
 		Acronym = "DMN";
 		Location = { AL["Feralas"], 357 };
 		LevelRange = "57-60";
@@ -452,7 +440,7 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Tribute Run"], OBJECT, 190005 };
 	};
 	DireMaulWest = {
-		ZoneName = { AL["Dire Maul (West)"], 2557 };
+		ZoneName = { AL["Dire Maul"].." ("..AL["West"]..")", 2557 };
 		Acronym = "DMW";
 		Location = { AL["Feralas"], 357 };
 		LevelRange = "57-60";
@@ -900,7 +888,7 @@ AtlasMaps = {
 		{ ORNG..AL["Damage: "]..AL["Nature"]..", "..AL["Fire"]..", "..AL["Arcane"]..", "..AL["Shadow"]..", "..AL["Frost"]};
 	};
 	SMLibrary = {
-		ZoneName = { AL["Scarlet Monastery Library"], 796 };
+		ZoneName = { AL["Scarlet Monastery"]..": "..AL["Library"], 796 };
 		Acronym = "SM Lib";
 		Location = { AL["Tirisfal Glades"], 85 };
 		LevelRange = "29-39";
@@ -916,7 +904,7 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Set: "]..BIS["Chain of the Scarlet Crusade"] };
 	};
 	SMArmory = {
-		ZoneName = { AL["Scarlet Monastery Armory"], 796 };
+		ZoneName = { AL["Scarlet Monastery"]..": "..AL["Armory"], 796 };
 		Acronym = "SM Arm";
 		Location = { AL["Tirisfal Glades"], 85 };
 		LevelRange = "32-42";
@@ -931,7 +919,7 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Set: "]..BIS["Chain of the Scarlet Crusade"] };
 	};
 	SMCathedral = {
-		ZoneName = { AL["Scarlet Monastery Cathedral"], 796 };
+		ZoneName = { AL["Scarlet Monastery"]..": "..AL["Cathedral"], 796 };
 		Acronym = "SM Cath";
 		Location = { AL["Tirisfal Glades"], 85 };
 		LevelRange = "35-45";
@@ -948,7 +936,7 @@ AtlasMaps = {
 		{ GREY..INDENT..AL["Set: "]..BIS["Chain of the Scarlet Crusade"] };
 	};
 	SMGraveyard = {
-		ZoneName = { AL["Scarlet Monastery Graveyard"], 796 };
+		ZoneName = { AL["Scarlet Monastery"]..": "..AL["Graveyard"], 796 };
 		Acronym = "SM GY";
 		Location = { AL["Tirisfal Glades"], 85 };
 		LevelRange = "26-36";
@@ -1503,12 +1491,12 @@ AtlasMaps = {
 		{ ORNG..AL["Damage: "]..AL["Shadow"] };
 	};
 	Turtlhu = {
-		ZoneName = { AL["Turtlhu, the Black Turtle of Doom"], NPC, 18728 };
+		ZoneName = { "Turtlhu, the Black Turtle of Doom", NPC, 18728 };
 		Location = { AL["Feralas"], ZONE, 357 };
 		LevelRange = "60+";
 		MinLevel = "--";
 		PlayerLimit = "--";
-		{ GREY.."1) "..AL["Turtlhu, the Black Turtle of Doom"], NPC, 18728 };
+		{ GREY.."1) ".."Turtlhu, the Black Turtle of Doom", NPC, 18728 };
 		{ "" };
 		{ "" };
 		{ "" };
@@ -1534,14 +1522,14 @@ AtlasMaps = {
 		{ ORNG..AL["Damage: "]..AL["Shadow"] };
 	};
 	Nerubian = {
-		ZoneName = { AL["Nerubian Overseer"], NPC, 16184 };
+		ZoneName = { "Nerubian Overseer", NPC, 16184 };
 		Acronym = "Spooder";
 		Location = { AL["Eastern Plaguelands"], ZONE, 139 };
 		LevelRange = "--";
 		MinLevel = "--";
 		PlayerLimit = "--";
 		Continent = AL["Eastern Kingdoms"];
-		{ GREY.."1) "..AL["Nerubian Overseer"], NPC, 16184 };
+		{ GREY.."1) ".."Nerubian Overseer", NPC, 16184 };
 		{ "" };
 		{ "" };
 		{ "" };
@@ -1567,14 +1555,14 @@ AtlasMaps = {
 		{ ORNG..AL["Damage: "]..AL["Nature"]..', '..AL["Shadow"] };
 	};
 	Reaver = {
-		ZoneName = { AL["Dark Reaver of Karazhan"], NPC, 80936 };
+		ZoneName = { "Dark Reaver of Karazhan", NPC, 80936 };
 		Acronym = "Reaver";
 		Location = { AL["Deadwind Pass"], ZONE, 41 };
 		LevelRange = "--";
 		MinLevel = "--";
 		PlayerLimit = "--";
 		Continent = AL["Eastern Kingdoms"];
-		{ GREY.."1) "..AL["Dark Reaver of Karazhan"], NPC, 80936 };
+		{ GREY.."1) ".."Dark Reaver of Karazhan", NPC, 80936 };
 		{ "" };
 		{ "" };
 		{ "" };
@@ -1600,14 +1588,14 @@ AtlasMaps = {
 		--{ ORNG..AL["Damage: "]..AL["Physical"] };
 	};
 		Ostarius = {
-		ZoneName = { AL["Ostarius of Uldum"], NPC, 80935 };
+		ZoneName = { "Ostarius of Uldum", NPC, 80935 };
 		Acronym = "Ostarius";
 		Location = { AL["Tanaris"], ZONE, 440 };
 		LevelRange = "--";
 		MinLevel = "--";
 		PlayerLimit = "40";
 		Continent = AL["Kalimdor"];
-		{ GREY.."1) "..AL["Ostarius of Uldum"], NPC, 80935 };
+		{ GREY.."1) ".."Ostarius of Uldum", NPC, 80935 };
 		{ "" };
 		{ "" };
 		{ "" };
@@ -1633,14 +1621,14 @@ AtlasMaps = {
 		--{ ORNG..AL["Damage: "]..AL["Physical"] };
 	};
 		Concavius = {
-		ZoneName = { AL["Concavius <Voidspawn>"], NPC, 92213 };
+		ZoneName = { "Concavius <Voidspawn>", NPC, 92213 };
 		Acronym = "Concavius";
 		Location = { AL["Desolace"], ZONE, 405 };
 		LevelRange = "--";
 		MinLevel = "--";
 		PlayerLimit = "20";
 		Continent = AL["Kalimdor"];
-		{ GREY.."1) "..AL["Concavius <Voidspawn>"], NPC, 92213 };
+		{ GREY.."1) ".."Concavius <Voidspawn>", NPC, 92213 };
 		{ "" };
 		{ "" };
 		{ "" };
@@ -1740,8 +1728,6 @@ AtlasMaps = {
 		{ GREN..INDENT..AL["Honored Reputation Rewards"] };
 		{ GREN..INDENT..AL["Revered Reputation Rewards"] };
 		{ GREN..INDENT..AL["Exalted Reputation Rewards"] };
-		{ GREY..INDENT..AL["Korrak the Bloodrager"] };
-		{ GREY..INDENT..AL["Ivus & Lokholar"] };
 		{ "" };
 		{ _RED..AL["Red"]..": ".._RED..AL["Graveyards, Capturable Areas"] };
 		{ ORNG..AL["Orange"]..": "..ORNG..AL["Bunkers, Towers, Destroyable Areas"] };
@@ -1804,8 +1790,6 @@ AtlasMaps = {
 		{ GREN..INDENT..AL["Honored Reputation Rewards"] };
 		{ GREN..INDENT..AL["Revered Reputation Rewards"] };
 		{ GREN..INDENT..AL["Exalted Reputation Rewards"] };
-		{ GREY..INDENT..AL["Korrak the Bloodrager"] };
-		{ GREY..INDENT..AL["Ivus & Lokholar"] };
 		{ "" };
 		{ _RED..AL["Red"]..": ".._RED..AL["Graveyards, Capturable Areas"] };
 		{ ORNG..AL["Orange"]..": "..ORNG..AL["Bunkers, Towers, Destroyable Areas"] };
