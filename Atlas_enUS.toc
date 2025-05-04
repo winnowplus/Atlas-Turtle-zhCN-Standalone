@@ -1,13 +1,13 @@
 ## Interface: 11200
 ## Title: Atlas |cff7fff7f TurtleWOW|r
-## Notes: Atlas: instance Map Browser. January 22nd, 2024
-## Notes-deDE: Instanzkarten-Browser
-## Notes-frFR: Navigateur de cartes d'instances
+## Notes: Instance map browser.
+## Notes-deDE: Instanzkarten-Browser.
+## Notes-frFR: Navigateur de cartes d'instances.
 ## Notes-zhTW: 副本地圖集, 瀏覽各副本、戰場地圖以及飛行地圖
 ## Notes-zhCN: 副本地图浏览器
-## Notes-esES: Navegador de Mapas de Mazmorras
-## Notes-ruRU: Обозреватель подземелий
-## Version: 1.13.2
+## Notes-esES: Navegador de Mapas de Mazmorras.
+## Notes-ruRU: Обозреватель подземелий.
+## Version: 1.13.8
 ## X-Date: 22.01.2024
 ## Author: Shahopriest
 ## X-Email: m4r3lk4@gmail.com
